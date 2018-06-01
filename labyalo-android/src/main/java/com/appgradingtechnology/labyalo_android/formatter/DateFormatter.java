@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by BCTI 3 on 1/31/2018.
@@ -107,6 +108,6 @@ public class DateFormatter {
     }
 
     public static SimpleDateFormat getSimpleDateFormat(String format){
-        return new SimpleDateFormat(format);
+        return new SimpleDateFormat(format, Locale.getDefault());
     }
 }

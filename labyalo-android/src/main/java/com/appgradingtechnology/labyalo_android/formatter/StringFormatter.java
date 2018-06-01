@@ -1,5 +1,7 @@
 package com.appgradingtechnology.labyalo_android.formatter;
 
+import java.util.Locale;
+
 /**
  * Created by Labyalo on 8/3/2017.
  */
@@ -15,7 +17,7 @@ public class StringFormatter {
 
     public static String first(String string) {
         if(string.length()>0){
-            return string.substring(0,1).toUpperCase() + string.substring(1).toLowerCase();
+            return string.substring(0,1).toUpperCase(Locale.getDefault()) + string.substring(1).toLowerCase(Locale.getDefault());
         }
         return string;
     }

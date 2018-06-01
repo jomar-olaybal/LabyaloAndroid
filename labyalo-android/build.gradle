@@ -2,26 +2,33 @@ apply plugin: 'com.android.library'
 
 buildscript {
     repositories {
+        jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
+        classpath 'com.android.tools.build:gradle:3.1.2'
     }
 }
 
 ext {
     bintrayRepo = 'LabyaloAndroid' // your repo name
     bintrayName = 'LabyaloAndroid' // has to be same as your library module name
+
     publishedGroupId = 'com.appgradingtechnology.labyalo_android' // your module package name
-    libraryName = ''
+    libraryName = 'LabyaloAndroid'
     artifact = 'labyalo-android' // has to be same as your library module name
+
     libraryDescription = 'Android utils'
-    siteUrl = ''
-    gitUrl = ''
+
+    siteUrl = 'https://github.com/jomar-olaybal/LabyaloAndroid'
+    gitUrl = 'https://github.com/jomar-olaybal/LabyaloAndroid.git'
+
     libraryVersion = '1.0'
-    developerId = 'labyalo'
-    developerName = 'JomarOlaybal'
+
+    developerId = 'jomarolaybal'
+    developerName = 'Jomar Olaybal'
     developerEmail = 'jomar.olaybal@gmail.com'
+
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
